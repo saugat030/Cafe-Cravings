@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import LandingPortion from "./components/LandingPortion";
+import NavBar from "./components/NavBar";
+import PopularNow from "./components/PopularNow";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body class="bg-[#F6EBDA] font-Poppins text-[#2f2105] w-screen overflow-x-hidden">
+      <div className="relative z-10">
+        <NavBar />
+        <LandingPortion />
+      </div>
+      <PopularNow />
+    </body>
   );
 }
 
