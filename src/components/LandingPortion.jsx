@@ -1,5 +1,4 @@
 import React from "react";
-import img_hero from "../static/img_hero.png";
 const LandingPortion = () => {
   return (
     <div className="flex container mx-auto justify-between items-center p-7 mt-4">
@@ -23,7 +22,7 @@ const LandingPortion = () => {
         </div>
       </div>
       <div>
-        <img className="w-[700px]" src={img_hero} />
+        <img className="w-[700px]" src="/static/img_hero.png" />
       </div>
     </div>
   );

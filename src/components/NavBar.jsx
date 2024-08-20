@@ -1,10 +1,9 @@
 import React from "react";
-import bg_img_hero from "../static/bg_img_hero.svg";
 const NavBar = (props) => {
   return (
     <header className="w-full mt-1 h-32 relative -z-30">
       <div className="flex justify-end absolute z-10 w-full">
-        <img src={bg_img_hero} className="w-[30%]" />
+        <img src="/static/bg_img_hero.svg" className="w-[30%]" />
       </div>
       <nav className="w-full container mx-auto flex justify-between h-32 items-center gap-3 relative z-50">
         <div className="text-3xl">
