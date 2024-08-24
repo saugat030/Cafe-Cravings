@@ -1,7 +1,10 @@
 import React from "react";
+import classNames from "classnames";
+
 const NavBar = (props) => {
+  const navBg = classNames("w-full h-32 relative -z-30");
   return (
-    <header className="w-full mt-1 h-32 relative -z-30">
+    <header className={navBg}>
       <div className="flex justify-end absolute z-10 w-full">
         <img src="/static/bg_img_hero.svg" className="w-[30%]" />
       </div>
@@ -11,7 +14,7 @@ const NavBar = (props) => {
             className="w-20 inline"
             src="https://static.vecteezy.com/system/resources/previews/027/927/578/original/coffee-logo-ai-generative-free-png.png"
           />
-          <h1 className="inline font-Edu">KumCoffee</h1>
+          <h1 className="inline font-Edu">{props.title}</h1>
         </div>
         <ul className="flex-1 flex gap-3 p-2 text-xl justify-center">
           <li className="ml-4 text-[#FF902B]">About Us</li>
