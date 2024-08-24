@@ -2,13 +2,12 @@ import React from "react";
 import { motion, spring } from "framer-motion";
 const LandingPortion = () => {
   return (
-    <motion.div
-      className="flex container mx-auto justify-between items-center p-7 mt-4"
-      initial={{ x: -300 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 2, type: "spring" }}
-    >
-      <div>
+    <div className="flex container mx-auto justify-between items-center p-7 mt-4">
+      <motion.div
+        initial={{ x: -300 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 2, type: "spring" }}
+      >
         <h1 className="text-6xl w-[70%]">
           Enjoy your
           <p className="text-[#FF902B] inline m-0 p-0"> coffee </p>
@@ -26,11 +25,16 @@ const LandingPortion = () => {
             More
           </button>
         </div>
-      </div>
-      <div>
-        <img className="w-[700px]" src="/static/img_hero.png" />
-      </div>
-    </motion.div>
+      </motion.div>
+      <motion.figure
+        className="w-[700px] h-[415px] p-1"
+        initial={{ x: 300 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 2, type: "spring" }}
+      >
+        <img src="/static/img_hero.png" />
+      </motion.figure>
+    </div>
   );
 };
 

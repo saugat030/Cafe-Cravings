@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const AboutUS = () => {
   return (
-    <div className="bg-[#F6EBDA] mt-32">
+    <motion.div
+      className="bg-[#F6EBDA] mt-32"
+      initial={{ x: 300 }}
+      whileInView={{ x: 0 }}
+      transition={{ duration: 2, type: "spring" }}
+    >
       <div className="p-6 flex container gap-12 mx-auto items-center justify-evenly h-[500px]">
         <figure className="w-[360px] h-[400px] relative">
           <img
@@ -28,7 +34,7 @@ const AboutUS = () => {
         </section>
         {/* END AboutUS */}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
