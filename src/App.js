@@ -5,6 +5,7 @@ import LandingPortion from "./components/LandingPortion";
 import NavBar from "./components/NavBar";
 import PopularNow from "./components/PopularNow";
 import Services from "./components/Services";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <AboutUS />
       <ForYou />
+      <Reviews />
     </div>
   );
 }

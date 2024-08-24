@@ -1,8 +1,8 @@
 import React from "react";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 const NavBar = (props) => {
-  const navBg = classNames("w-full h-32 relative -z-30");
   return (
-    <header className={navBg}>
+    <header className="w-full h-32 relative -z-30">
       <div className="flex justify-end absolute z-10 w-full">
         <img src="/static/bg_img_hero.svg" className="w-[30%]" />
       </div>
@@ -19,13 +19,13 @@ const NavBar = (props) => {
           <li className="ml-4">Our Product</li>
           <li className="ml-4">Delivery</li>
         </ul>
-        <div id="search_cart">
+        <div className="flex items-center text-[#FF902B]">
           <input
             type="text"
-            className="p-2 rounded-2xl w-72 placeholder:text-lg shadow-2xl shadow-slate-800 text-xl mr-2"
+            className="p-2 rounded-2xl w-72 placeholder:text-lg shadow-md shadow-slate-500 text-xl mr-2 placeholder:italic placeholder:opacity-30"
             placeholder="Espresso"
           />
-          <i className="ri-shopping-cart-line text-4xl ml-2" />
+          <AiOutlineShoppingCart size={40} />
         </div>
       </nav>
     </header>

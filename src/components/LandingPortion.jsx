@@ -1,11 +1,17 @@
 import React from "react";
+import { motion, spring } from "framer-motion";
 const LandingPortion = () => {
   return (
-    <div className="flex container mx-auto justify-between items-center p-7 mt-4">
+    <motion.div
+      className="flex container mx-auto justify-between items-center p-7 mt-4"
+      initial={{ x: -300 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 2, type: "spring" }}
+    >
       <div>
-        <h1 className="text-6xl w-[60%]">
+        <h1 className="text-6xl w-[70%]">
           Enjoy your
-          <p className="text-[#FF902B] inline m-0 p-0">coffee</p>
+          <p className="text-[#FF902B] inline m-0 p-0"> coffee </p>
           before your activity
         </h1>
         <h2 className="text-slate-600 mt-5">
@@ -24,7 +30,7 @@ const LandingPortion = () => {
       <div>
         <img className="w-[700px]" src="/static/img_hero.png" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

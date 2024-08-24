@@ -2,13 +2,13 @@ import React from "react";
 
 const AboutUS = () => {
   return (
-    <div className="bg-[#F6EBDA]  mt-20 ">
-      <div className="p-10 bg-repeat-x flex container mx-auto items-center justify-evenly h-[500px]">
+    <div className="bg-[#F6EBDA] mt-32">
+      <div className="p-6 flex container gap-12 mx-auto items-center justify-evenly h-[500px]">
         <figure className="w-[360px] h-[400px] relative">
           <img
             src="/static/unsplash_3n3mPoGko8g.png"
             alt="IMAGE"
-            className="absolute bottom-8 border-2 border-gray-600 rounded-xl shadow-xl shadow-gray-600"
+            className="absolute bottom-8 border-4 border-white rounded-xl shadow-xl shadow-gray-700"
           />
         </figure>
         {/* AboutUS */}

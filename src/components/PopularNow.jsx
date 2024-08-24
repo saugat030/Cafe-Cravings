@@ -1,11 +1,20 @@
 import React from "react";
 import Products from "./Products";
+import { motion } from "framer-motion";
 const PopularNow = () => {
   return (
-    <div className="bg-[#F6EBDA]">
-      <section className="flex flex-col gap-8 container justify-between mx-auto p-4 mb-12">
-        <h1 className="text-4xl font-bold">Popular Now</h1>
-        <div className="flex justify-around items-center">
+    <div className="bg-[#F6EBDA] p-12">
+      <motion.section
+        className="flex flex-col gap-6 container justify-between mx-auto p-4 mb-12"
+        initial={{ x: -300 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 2, type: "spring" }}
+      >
+        <h1 className="text-4xl font-bold mb-4 ms-16 pl-2">
+          Popular{" "}
+          <u className="underline decoration-4 decoration-amber-700">Now</u>
+        </h1>
+        <div className="flex justify-around  items-center">
           <Products
             productName="Vanilla Latte"
             productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
@@ -25,7 +34,7 @@ const PopularNow = () => {
             hasButton={true}
           />
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

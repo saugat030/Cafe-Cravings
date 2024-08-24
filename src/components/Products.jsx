@@ -1,8 +1,9 @@
 import React from "react";
+import { FaCartShopping } from "react-icons/fa6";
 
 const Products = (props) => {
   return (
-    <section className="w-[25%] flex flex-col items-center bg-white p-5 rounded-3xl gap-4 shadow-md shadow-slate-300 hover:shadow-slate-600 border-purple-400 border mb-5">
+    <section className="w-[25%] flex flex-col items-center bg-white p-5 rounded-3xl gap-4 shadow-md shadow-slate-300 hover:shadow-slate-600 mb-5">
       <div className="w-[320px] relative overflow-hidden group">
         <img
           src={props.productImg}
@@ -23,8 +24,9 @@ const Products = (props) => {
         <h1 className="text-xl font-bold">{props.productName}</h1>
         <h1 className="text-xl font-bold">21K</h1>
       </div>
-      {props.hasButton && (
-        <div className="flex justify-between items-center w-full">
+
+      <div className="flex justify-between items-center w-full">
+        {props.hasButton && (
           <h1 className="text-lg text-[#FF902B] font-medium flex gap-3">
             <button className="p-1 border border-[#FF902B] w-24 rounded-xl">
               Hot
@@ -33,12 +35,14 @@ const Products = (props) => {
               Cold
             </button>
           </h1>
-
-          <div className="text-2xl text-[#FF902B]">
-            <i className="ri-shopping-cart-fill" />
-          </div>
+        )}
+        {props.aboutProduct && (
+          <p className="text-slate-600">{props.aboutProduct}</p>
+        )}
+        <div className="text-2xl text-[#FF902B] p-2">
+          <FaCartShopping />
         </div>
-      )}
+      </div>
     </section>
   );
 };

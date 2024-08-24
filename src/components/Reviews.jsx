@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Article(props) {
+export default function Reviews(props) {
   return (
     <section className="container mx-auto p-8 bg-[#F6EBDA] flex justify-between items-center space-x-8">
       <div className="w-1/3 flex flex-col justify-center">
