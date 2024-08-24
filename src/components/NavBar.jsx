@@ -1,6 +1,4 @@
 import React from "react";
-import classNames from "classnames";
-
 const NavBar = (props) => {
   const navBg = classNames("w-full h-32 relative -z-30");
   return (
