@@ -15,7 +15,7 @@ const Products = (props) => {
           <h1 className="font-bold text-amber-900 text-xl opacity-100 text-center">
             {props.productName}
           </h1>
-          <p className="text-sm font-bold opacity-100 m-2 rounded-2xl">
+          <p className="text-sm text-balance opacity-100 m-2 rounded-2xl">
             {props.productDescription}
           </p>
         </div>

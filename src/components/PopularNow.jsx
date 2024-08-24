@@ -7,7 +7,7 @@ const PopularNow = () => {
       <motion.section
         className="flex flex-col gap-6 container justify-between mx-auto p-4 mb-12"
         initial={{ x: -300 }}
-        animate={{ x: 0 }}
+        whileInView={{ x: 0 }}
         transition={{ duration: 2, type: "spring" }}
       >
         <h1 className="text-4xl font-bold mb-4 ms-16 pl-2">

@@ -5,16 +5,16 @@ const Services = () => {
     <div className="flex flex-col justify-between gap-14 bg-white p-14">
       <motion.div
         className="container mx-auto h-full"
-        initial={{ x: -300 }}
-        whileInView={{ x: 0 }}
+        initial={{ x: -300, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, type: "spring" }}
       >
         <h1 className="text-4xl font-bold mb-5">How our services work</h1>
       </motion.div>
       <motion.div
         className="container mx-auto flex justify-around items-center mt-5"
-        initial={{ x: 300 }}
-        whileInView={{ x: 0 }}
+        initial={{ x: 300, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, type: "spring" }}
       >
         {/*Diffferent Service seperator*/}
