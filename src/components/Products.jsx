@@ -24,7 +24,6 @@ const Products = (props) => {
         <h1 className="text-xl font-bold">{props.productName}</h1>
         <h1 className="text-xl font-bold">21K</h1>
       </div>
-
       <div className="flex justify-between items-center w-full">
         {props.hasButton && (
           <h1 className="text-lg text-[#FF902B] font-medium flex gap-3">
