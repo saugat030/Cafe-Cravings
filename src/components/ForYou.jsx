@@ -1,5 +1,6 @@
 import React from "react";
 import Products from "./Products";
+import img from "../static/vanillaLatte.png";
 const ForYou = () => {
   return (
     <div className="p-20">
@@ -15,42 +16,42 @@ const ForYou = () => {
           <Products
             productName="Vanilla Latte"
             productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
-            productImg="/static/vanillaLatte.png"
+            productImg={img}
             hasButton={false}
             aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
           />
           <Products
             productName="Vanilla Latte"
             productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
-            productImg="/static/vanillaLatte.png"
+            productImg={img}
             hasButton={false}
             aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
           />
           <Products
             productName="Vanilla Latte"
             productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
-            productImg="/static/vanillaLatte.png"
+            productImg={img}
             hasButton={false}
             aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
           />
           <Products
             productName="Vanilla Latte"
             productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
-            productImg="/static/vanillaLatte.png"
+            productImg={img}
             hasButton={false}
             aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
           />
           <Products
             productName="Vanilla Latte"
             productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
-            productImg="/static/vanillaLatte.png"
+            productImg={img}
             hasButton={false}
             aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
           />
           <Products
             productName="Vanilla Latte"
             productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
-            productImg="/static/vanillaLatte.png"
+            productImg={img}
             hasButton={false}
             aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
           />

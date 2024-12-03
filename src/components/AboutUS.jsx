@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import img from "../static/unsplash_3n3mPoGko8g.png";
 import React from "react";
 
 const AboutUS = () => {
@@ -12,7 +13,7 @@ const AboutUS = () => {
           transition={{ duration: 2, type: "spring" }}
         >
           <img
-            src="/static/unsplash_3n3mPoGko8g.png"
+            src={img}
             alt="IMAGE"
             className="absolute bottom-8 border-4 border-white rounded-xl shadow-xl shadow-gray-700"
           />

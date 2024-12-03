@@ -1,5 +1,6 @@
 import React from "react";
-import { motion, spring } from "framer-motion";
+import img from "../static/img_hero.png";
+import { motion } from "framer-motion";
 const LandingPortion = () => {
   return (
     <div className="flex container mx-auto justify-between items-center p-7 mt-4">
@@ -32,7 +33,7 @@ const LandingPortion = () => {
         whileInView={{ x: 0 }}
         transition={{ duration: 2, type: "spring" }}
       >
-        <img src="/static/img_hero.png" />
+        <img src={img} />
       </motion.figure>
     </div>
   );
