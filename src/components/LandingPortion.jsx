@@ -8,6 +8,7 @@ const LandingPortion = () => {
         initial={{ x: -300 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 2, type: "spring" }}
+        viewport={{ once: true }}
       >
         <h1 className="text-6xl w-[70%]">
           Enjoy your
@@ -32,6 +33,7 @@ const LandingPortion = () => {
         initial={{ x: 300 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 2, type: "spring" }}
+        viewport={{ once: true }}
       >
         <img src={img} />
       </motion.figure>

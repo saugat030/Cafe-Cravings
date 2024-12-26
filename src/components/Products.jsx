@@ -1,9 +1,15 @@
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
-
+import { motion } from "framer-motion";
 const Products = (props) => {
   return (
-    <section className="w-[25%] flex flex-col items-center bg-white p-5 rounded-3xl gap-4 shadow-md shadow-slate-300 hover:shadow-slate-600 mb-5">
+    <motion.section
+      initial={{ y: -50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 2, type: "spring" }}
+      viewport={{ once: true }}
+      className="w-[25%] flex flex-col items-center bg-white p-5 rounded-3xl gap-4 shadow-md shadow-slate-300 hover:shadow-slate-600 mb-5"
+    >
       <div className="w-[320px] relative overflow-hidden group">
         <img
           src={props.productImg}
@@ -42,7 +48,7 @@ const Products = (props) => {
           <FaCartShopping />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

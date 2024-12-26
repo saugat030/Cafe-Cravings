@@ -12,6 +12,7 @@ const PopularNow = () => {
         initial={{ x: -300 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 2, type: "spring" }}
+        viewport={{ once: true }}
       >
         <h1 className="text-4xl font-bold mb-4 ms-16 pl-2">
           Popular{" "}

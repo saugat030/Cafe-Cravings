@@ -10,6 +10,7 @@ const Services = () => {
         initial={{ x: -300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, type: "spring" }}
+        viewport={{ once: true }}
       >
         <h1 className="text-4xl font-bold mb-5">How our services work</h1>
       </motion.div>
@@ -18,6 +19,7 @@ const Services = () => {
         initial={{ x: 300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, type: "spring" }}
+        viewport={{ once: true }}
       >
         {/*Diffferent Service seperator*/}
         <div className="flex flex-col items-center gap-5">

@@ -11,6 +11,7 @@ const AboutUS = () => {
           initial={{ x: -300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 2, type: "spring" }}
+          viewport={{ once: true }}
         >
           <img
             src={img}
@@ -24,6 +25,7 @@ const AboutUS = () => {
           initial={{ x: 300 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 2, type: "spring" }}
+          viewport={{ once: true }}
         >
           <h1 className="text-black text-3xl m-2 font-bold">About us</h1>
           <h2 className="text-black text-xl m-2 font-semibold">
