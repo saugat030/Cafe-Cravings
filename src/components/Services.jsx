@@ -4,7 +4,10 @@ import img1 from "../static/20+ coffee.png";
 import img2 from "../static/food-truck.png";
 const Services = () => {
   return (
-    <div className="flex flex-col justify-between p-12 xl:gap-14 bg-white sm:p-14">
+    <div
+      className="flex flex-col justify-between p-12 xl:gap-14 bg-white sm:p-14"
+      id="Delivery"
+    >
       <motion.div
         className="container mx-auto h-full"
         initial={{ x: -300, opacity: 0 }}

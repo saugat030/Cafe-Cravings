@@ -26,11 +26,24 @@ const NavigationMenu = (props) => {
             transition={{ duration: 0.5 }}
             className="h-full flex flex-col flex-1 z-50 bg-[#F6EBDA] justify-between"
           >
-            <ul className="flex flex-col gap-8 font-semibold p-2">
-              <li>About</li>
-              <li>Delivery</li>
-              <li>Services</li>
-              <li>Contact</li>
+            <ul
+              className="flex flex-col gap-8 font-semibold p-2"
+              onClick={() => {
+                props.setNavigation(!props.visible);
+              }}
+            >
+              <li>
+                <a href="#About">About Us</a>
+              </li>
+              <li>
+                <a href="#Delivery">Delivery</a>
+              </li>
+              <li>
+                <a href="#Products">Our Products</a>
+              </li>
+              <li>
+                <a href="#Products">Services</a>
+              </li>
               <li>
                 <AiOutlineShoppingCart className="text-3xl text-orange-400" />
               </li>

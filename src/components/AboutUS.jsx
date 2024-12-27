@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutUS = () => {
   return (
-    <div className="bg-[#F6EBDA] xl:mt-32 mt-16">
+    <div className="bg-[#F6EBDA] xl:mt-32 mt-16" id="About">
       <div className="xl:p-6 flex xl:flex-row flex-col container gap-12 mx-auto items-center justify-evenly xl:h-[500px]">
         <motion.figure
           className="xl:w-[360px] w-[300px] h-[400px] static xl:relative"

@@ -17,9 +17,15 @@ const NavBar = (props) => {
           <h1 className="inline text-lg xl:text-3xl font-Edu">{props.title}</h1>
         </div>
         <ul className="flex-1 hidden sm:flex gap-3 p-2 text-xl justify-center">
-          <li className="ml-4 text-[#FF902B]">About Us</li>
-          <li className="ml-4">Our Product</li>
-          <li className="ml-4">Delivery</li>
+          <li className="ml-4 hover:text-[#FF902B]">
+            <a href="#About">About Us</a>
+          </li>
+          <li className="ml-4 hover:text-[#FF902B]">
+            <a href="#Products">Our Products</a>
+          </li>
+          <li className="ml-4 hover:text-[#FF902B]">
+            <a href="#Delivery">Delivery</a>
+          </li>
         </ul>
         <div className="flex items-center text-[#FF902B]">
           <input
