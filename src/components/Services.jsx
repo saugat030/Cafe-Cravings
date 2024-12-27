@@ -4,7 +4,7 @@ import img1 from "../static/20+ coffee.png";
 import img2 from "../static/food-truck.png";
 const Services = () => {
   return (
-    <div className="flex flex-col justify-between gap-14 bg-white p-14">
+    <div className="flex flex-col justify-between p-12 xl:gap-14 bg-white sm:p-14">
       <motion.div
         className="container mx-auto h-full"
         initial={{ x: -300, opacity: 0 }}
@@ -12,10 +12,12 @@ const Services = () => {
         transition={{ duration: 2, type: "spring" }}
         viewport={{ once: true }}
       >
-        <h1 className="text-4xl font-bold mb-5">How our services work</h1>
+        <h1 className="xl:text-4xl text-2xl font-bold mb-5">
+          How our services work
+        </h1>
       </motion.div>
       <motion.div
-        className="container mx-auto flex justify-around items-center mt-5"
+        className="container mx-auto gap-12 flex xl:gap-4 xl:flex-row flex-col justify-around items-center mt-5"
         initial={{ x: 300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, type: "spring" }}
@@ -39,8 +41,8 @@ const Services = () => {
         </div>
         {/*Diffferent Service seperator*/}
         <div className="flex flex-col items-center gap-5">
-          <img src="/static/20+ coffee.png" alt="ICON" />
-          <h1 className="text-xl font-medium">Enjoy your coffee</h1>
+          <img src={img1} alt="ICON" />
+          <h1 className="md:text-xl text-lg font-medium">Enjoy your coffee</h1>
           <h2 className="text-sm text-slate-700">
             Warm coffee served at your doorsteps
           </h2>

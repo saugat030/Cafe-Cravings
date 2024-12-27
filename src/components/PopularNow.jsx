@@ -6,19 +6,21 @@ import img2 from "../static/vanillaLatte.png";
 import img3 from "../static/HazelNut.png";
 const PopularNow = () => {
   return (
-    <div className="bg-[#F6EBDA] p-12">
+    <div className="bg-[#F6EBDA] sm:p-12 pt-10">
       <motion.section
-        className="flex flex-col gap-6 container justify-between mx-auto p-4 mb-12"
+        className="flex flex-col gap-6 container justify-between items-center xl:items-start mx-auto p-4 mb-12"
         initial={{ x: -300 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 2, type: "spring" }}
         viewport={{ once: true }}
       >
-        <h1 className="text-4xl font-bold mb-4 ms-16 pl-2">
+        <h1 className="sm:text-4xl text-2xl font-bold mb-4 xl:ml-16 pl-2">
           Popular{" "}
-          <u className="underline decoration-4 decoration-amber-700">Now</u>
+          <u className="underline sm:decoration-4 decoration-2 decoration-amber-700">
+            Now
+          </u>
         </h1>
-        <div className="flex justify-around  items-center">
+        <div className="flex flex-col xl:flex-row justify-around w-full  items-center">
           <Products
             productName="Vanilla Latte"
             productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
