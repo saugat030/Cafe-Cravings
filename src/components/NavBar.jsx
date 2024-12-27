@@ -27,7 +27,15 @@ const NavBar = (props) => {
             className="hidden p-2 rounded-2xl w-72 placeholder:text-lg shadow-md shadow-slate-500 text-xl mr-2 placeholder:italic placeholder:opacity-30 sm:inline"
             placeholder="Espresso"
           />
-          <GiHamburgerMenu className="text-2xl xl:hidden " />
+          <button
+            className="text-2xl xl:hidden p-2"
+            onClick={() => {
+              props.setNavigation(!props.navigationM);
+            }}
+          >
+            <GiHamburgerMenu />
+          </button>
+
           <AiOutlineShoppingCart className="sm:text-3xl text-2xl hidden sm:block" />
         </div>
       </nav>
