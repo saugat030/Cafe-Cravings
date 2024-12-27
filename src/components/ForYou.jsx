@@ -3,14 +3,14 @@ import Products from "./Products";
 import img from "../static/vanillaLatte.png";
 const ForYou = () => {
   return (
-    <div className="p-20">
-      <div className="container mx-auto flex flex-col gap-3 p-5">
-        <h1 className="text-4xl font-bold text-black mb-10">
+    <div className="xl:p-20 p-4 pt-16">
+      <div className="container mx-auto flex flex-col gap-3 xl:p-5">
+        <h1 className="xl:text-4xl text-3xl font-bold text-black xl:mb-10 mb-5">
           Special Menu{" "}
           <u className="underline decoration-4 decoration-amber-700">for you</u>
         </h1>
         {/* Products Cards Section*/}
-        <div className="flex flex-wrap w-full gap-5 justify-between items-center">
+        <div className="flex flex-wrap w-full gap-5 xl:justify-between justify-center items-center">
           {/* Call products Here through props */}
           {/* Different PRoduct */}
           <Products

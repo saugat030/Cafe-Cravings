@@ -10,7 +10,7 @@ const Products = (props) => {
       viewport={{ once: true }}
       className="2xl:w-[25%] xl:w-[32%] w-[75%] flex flex-col items-center bg-white sm:p-5 p-3 rounded-3xl gap-2 shadow-md shadow-slate-300 hover:shadow-slate-600 mb-5"
     >
-      <div className="sm:w-[320px] w-[240px] relative overflow-hidden group">
+      <div className="sm:w-[320px] w-[220px] relative overflow-hidden group">
         <img
           src={props.productImg}
           className="w-full rounded-lg"
