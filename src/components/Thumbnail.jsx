@@ -1,9 +1,16 @@
 import React from "react";
 
-const Thumbnail = () => {
+const Thumbnail = (props) => {
   return (
-    <div className="h-52 w-40 bg-primary rounded-md">
-      <img src="" alt="" className="" />
+    <div
+      onClick={() => props.setID(props.id)}
+      className="h-52 w-40 p-1 rounded-xl bg-primary hover:bg-secondary flex items-center justify-center cursor-pointer"
+    >
+      <img
+        src={props.img_src}
+        alt="Photo"
+        className="rounded-xl h-full w-full"
+      />
     </div>
   );
 };
