@@ -7,7 +7,13 @@ module.exports = {
       Poppins: ["Poppins", "sans-serif"],
       Edu: ["Edu AU VIC WA NT Hand", "cursive"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#F6EBDA",
+        secondary: "#2f2105",
+        ternary: "#F5FEFD",
+      },
+    },
   },
   plugins: [],
 };

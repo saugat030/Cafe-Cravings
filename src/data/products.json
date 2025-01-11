@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso",
+    "description": "A strong and bold coffee made by forcing hot water through finely-ground coffee beans.",
+    "type": "Brewed Coffee",
+    "hot": true,
+    "cold": false,
+    "thumbnail_url": "https://dummyurl.com/espresso-thumbnail",
+    "poster_url": "https://dummyurl.com/espresso-poster",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Iced Latte",
+    "description": "A creamy and refreshing coffee made with espresso, milk, and served over ice.",
+    "type": "Latte",
+    "hot": false,
+    "cold": true,
+    "thumbnail_url": "https://dummyurl.com/iced-latte-thumbnail",
+    "poster_url": "https://dummyurl.com/iced-latte-poster",
+    "rating": 4.6
+  },
+  {
+    "id": 3,
+    "name": "Cappuccino",
+    "description": "A popular Italian coffee with equal parts espresso, steamed milk, and milk foam.",
+    "type": "Cappuccino",
+    "hot": true,
+    "cold": false,
+    "thumbnail_url": "https://dummyurl.com/cappuccino-thumbnail",
+    "poster_url": "https://dummyurl.com/cappuccino-poster",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Cold Brew",
+    "description": "A smooth and naturally sweet coffee made by steeping coarsely ground beans in cold water.",
+    "type": "Cold Brew",
+    "hot": false,
+    "cold": true,
+    "thumbnail_url": "https://dummyurl.com/cold-brew-thumbnail",
+    "poster_url": "https://dummyurl.com/cold-brew-poster",
+    "rating": 4.5
+  },
+  {
+    "id": 5,
+    "name": "Flat White",
+    "description": "A silky coffee drink made with espresso and steamed milk, without the foam of a cappuccino.",
+    "type": "Flat White",
+    "hot": true,
+    "cold": false,
+    "thumbnail_url": "https://dummyurl.com/flat-white-thumbnail",
+    "poster_url": "https://dummyurl.com/flat-white-poster",
+    "rating": 4.4
+  },
+  {
+    "id": 6,
+    "name": "Americano",
+    "description": "A diluted espresso drink that combines a shot of espresso with hot water.",
+    "type": "Brewed Coffee",
+    "hot": true,
+    "cold": false,
+    "thumbnail_url": "https://dummyurl.com/americano-thumbnail",
+    "poster_url": "https://dummyurl.com/americano-poster",
+    "rating": 4.3
+  },
+  {
+    "id": 7,
+    "name": "Mocha",
+    "description": "A chocolate-flavored coffee drink made with espresso, steamed milk, and chocolate syrup.",
+    "type": "Specialty Coffee",
+    "hot": true,
+    "cold": false,
+    "thumbnail_url": "https://dummyurl.com/mocha-thumbnail",
+    "poster_url": "https://dummyurl.com/mocha-poster",
+    "rating": 4.6
+  },
+  {
+    "id": 8,
+    "name": "Affogato",
+    "description": "A decadent coffee dessert where hot espresso is poured over a scoop of vanilla ice cream.",
+    "type": "Dessert Coffee",
+    "hot": true,
+    "cold": false,
+    "thumbnail_url": "https://dummyurl.com/affogato-thumbnail",
+    "poster_url": "https://dummyurl.com/affogato-poster",
+    "rating": 4.9
+  },
+  {
+    "id": 9,
+    "name": "Macchiato",
+    "description": "An espresso drink with a small amount of foamed milk on top.",
+    "type": "Espresso-Based",
+    "hot": true,
+    "cold": false,
+    "thumbnail_url": "https://dummyurl.com/macchiato-thumbnail",
+    "poster_url": "https://dummyurl.com/macchiato-poster",
+    "rating": 4.5
+  },
+  {
+    "id": 10,
+    "name": "Iced Mocha",
+    "description": "A refreshing mix of espresso, chocolate, and milk served over ice.",
+    "type": "Specialty Coffee",
+    "hot": false,
+    "cold": true,
+    "thumbnail_url": "https://dummyurl.com/iced-mocha-thumbnail",
+    "poster_url": "https://dummyurl.com/iced-mocha-poster",
+    "rating": 4.7
+  },
+  {
+    "id": 11,
+    "name": "Turkish Coffee",
+    "description": "A traditional Middle Eastern coffee prepared with finely ground coffee beans and brewed in a cezve.",
+    "type": "Traditional Coffee",
+    "hot": true,
+    "cold": false,
+    "thumbnail_url": "https://dummyurl.com/turkish-coffee-thumbnail",
+    "poster_url": "https://dummyurl.com/turkish-coffee-poster",
+    "rating": 4.8
+  },
+  {
+    "id": 12,
+    "name": "Nitro Cold Brew",
+    "description": "Cold brew coffee infused with nitrogen for a creamy texture and smooth taste.",
+    "type": "Cold Brew",
+    "hot": false,
+    "cold": true,
+    "thumbnail_url": "https://dummyurl.com/nitro-cold-brew-thumbnail",
+    "poster_url": "https://dummyurl.com/nitro-cold-brew-poster",
+    "rating": 4.9
+  }
+]
