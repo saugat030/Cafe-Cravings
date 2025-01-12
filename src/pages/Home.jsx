@@ -10,7 +10,6 @@ import NavigationMenu from "../components/NavigationMenu";
 import { useState } from "react";
 const Home = () => {
   const [navigationM, setNavigationM] = useState(false);
-  console.log(navigationM);
   return (
     <div className="bg-[#F5FEFD] font-Poppins text-[#2f2105] overflow-x-hidden">
       <div className="relative z-10 bg-[#F6EBDA]">

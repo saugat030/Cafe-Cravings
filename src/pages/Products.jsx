@@ -7,7 +7,6 @@ const Products = () => {
   const [data, setData] = useState(null);
   const [navigationM, setNavigationM] = useState(false);
   const [id, setID] = useState(Math.floor(Math.random() * 10));
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -56,8 +55,8 @@ const Products = () => {
               </div>
               <div id="best_selling" className="flex flex-col gap-2">
                 <h1 className="text-2xl font-semibold">Best Selling</h1>
-                <div className="flex gap-4">
-                  {data.slice(0, 4).map((items) => (
+                <div className="flex flex-wrap gap-4">
+                  {data.slice(0, 11).map((items) => (
                     <Thumbnail
                       setID={setID}
                       key={items.id}
@@ -69,10 +68,12 @@ const Products = () => {
                 </div>
               </div>
             </div>
-            <figure className="flex-1 flex items-center h-full justify-center">
+            <figure
+              className={`transition-opacity duration-700 flex-1 flex items-center h-full justify-center`}
+            >
               <img
                 src={item.poster_url}
-                alt="Photo"
+                alt="poster_bg"
                 className="h-[800px] rounded-xl"
               />
             </figure>
@@ -81,7 +82,11 @@ const Products = () => {
       </section>
     );
   } else {
-    return <div className="text-8xl">Loading..............</div>;
+    return (
+      <div className="text-8xl h-screen  text-center justify-center">
+        Loading..............
+      </div>
+    );
   }
 };
 
