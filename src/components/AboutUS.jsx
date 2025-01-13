@@ -27,18 +27,18 @@ const AboutUS = () => {
           transition={{ duration: 2, type: "spring" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-black xl:text-3xl text-2xl m-2 font-bold">
+          <h1 className="text-black xl:text-4xl text-2xl m-2 font-bold">
             About us
           </h1>
           <h2 className="text-black xl:text-xl text-sm m-2 font-semibold">
             We provide quality coffee, and ready to deliver.
           </h2>
-          <p className="text-[#D9D9D9] xl:font-medium text-sm m-2">
+          <p className="text-slate-600 xl:font-medium text-sm m-2">
             We are a company that makes and distributes delicious drinks. our
             main product is made with a secret recipe and available in stores
             worldwide.
           </p>
-          <button className="bg-[#2F2105] xl:w-1/4 w-36 p-2 rounded-2xl xl:text-base text-xs  text-[#F4AE26] m-2">
+          <button className="bg-[#2F2105] xl:w-1/4 w-36 p-2 rounded-3xl xl:text-base text-xs  text-[#F4AE26] m-2">
             Get your Coffee
           </button>
         </motion.section>

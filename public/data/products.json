@@ -7,7 +7,7 @@
     "hot": true,
     "cold": false,
     "thumbnail_url": "https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-a-macchiato-003.jpg",
-    "poster_url": "https://i.pinimg.com/736x/8a/54/bd/8a54bdd4bb275f91724f80148ed5d467.jpg",
+    "poster_url": "/Poster/espressoPoster.png",
     "rating": 4.8
   },
   {
@@ -18,8 +18,7 @@
     "hot": false,
     "cold": true,
     "thumbnail_url": "https://www.pumpkinnspice.com/wp-content/uploads/2022/07/IMG_1386.jpg",
-    "poster_url": "https://images.unsplash.com/photo-1520031607889-97ba0c7190ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aWNlZCUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D",
-    "rating": 4.6
+    "poster_url": "/Poster/icedLattePoster.png"
   },
   {
     "id": 3,
@@ -29,7 +28,7 @@
     "hot": true,
     "cold": false,
     "thumbnail_url": "https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122&width=320",
-    "poster_url": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL3Jhd3BpeGVsb2ZmaWNlMjFfdHdvX2NvZmZlZV9jdXBzX3BsYWNlZF9jbG9zZV90b2dldGhlcl93aXRoX2xhdF9hMmU2YTU5Ni1iNmJjLTQ5OTMtODRmYy0yODg3NjlkOWVhOGJfMS5qcGc.jpg",
+    "poster_url": "/Poster/cappuPoster.png",
     "rating": 4.7
   },
   {
@@ -40,7 +39,7 @@
     "hot": false,
     "cold": true,
     "thumbnail_url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2F9eada0d203bfb580d801b478edd553465c7afb52",
-    "poster_url": "https://images.unsplash.com/photo-1527156231393-7023794f363c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbGQlMjBicmV3fGVufDB8fDB8fHww",
+    "poster_url": "/Poster/coldbrewPoster.png",
     "rating": 4.5
   },
   {
