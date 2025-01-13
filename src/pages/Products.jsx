@@ -9,8 +9,9 @@ import { GrCaretNext } from "react-icons/gr";
 const Products = () => {
   const [data, setData] = useState(null);
   const [navigationM, setNavigationM] = useState(false);
-  const [id, setID] = useState(Math.floor(Math.random() * 10));
+  const [id, setID] = useState(1);
   const [firstIndex, setFirstIndex] = useState(0);
+  const itemsPerPage = 4;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +32,19 @@ const Products = () => {
 
   if (data) {
     const item = data.find((item) => item.id === id);
-    let lastIndex = (firstIndex + 3) % data.length;
+    const handleNext = () => {
+      setFirstIndex((prevIndex) => (prevIndex + itemsPerPage) % data.length);
+    };
+
+    const handlePrevious = () => {
+      setFirstIndex(
+        (prevIndex) => (prevIndex - itemsPerPage + data.length) % data.length
+      );
+    };
+    const displayedElements = [
+      ...data.slice(firstIndex, firstIndex + itemsPerPage),
+      ...data.slice(0, Math.max(0, firstIndex + itemsPerPage - data.length)),
+    ];
     return (
       <section>
         <div className="relative z-10 font-Poppins max-h-screen overflow-x-hidden">
@@ -65,7 +78,7 @@ const Products = () => {
               >
                 <h1 className="text-2xl font-semibold">Best Selling</h1>
                 <div className="relative flex flex-wrap gap-4 w-auto">
-                  {data.slice(firstIndex, lastIndex + 1).map((items) => (
+                  {displayedElements.map((items) => (
                     <Thumbnail
                       setID={setID}
                       key={items.id}
@@ -75,21 +88,13 @@ const Products = () => {
                     />
                   ))}
                   <button
-                    onClick={() => {
-                      if (firstIndex == 0) {
-                        return;
-                      } else {
-                        setFirstIndex(firstIndex - 4);
-                      }
-                    }}
+                    onClick={handlePrevious}
                     className="absolute top-0 bottom-0 -left-10 z-10 hover:bg-secondary/30 p-2 rounded-xl transition-colors duration-300 transform ease-linear"
                   >
                     <GrCaretPrevious className="text-2xl text-black" />
                   </button>
                   <button
-                    onClick={() => {
-                      setFirstIndex((firstIndex + 4) % data.length);
-                    }}
+                    onClick={handleNext}
                     className="absolute z-10 top-0 -right-10 bottom-0 hover:bg-secondary/30 p-2 rounded-xl transition-colors duration-300 transform ease-linear"
                   >
                     <GrCaretNext className="text-2xl" />
