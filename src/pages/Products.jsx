@@ -109,7 +109,7 @@ const Products = () => {
     );
   } else {
     return (
-      <div className="text-8xl h-screen  text-center justify-center">
+      <div className="text-8xl h-screen flex  items-center justify-center">
         Loading..............
       </div>
     );
