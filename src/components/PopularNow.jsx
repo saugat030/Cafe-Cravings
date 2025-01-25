@@ -1,10 +1,30 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import Products from "./Products";
 import { motion } from "framer-motion";
 import img1 from "../static/espresso.png";
 import img2 from "../static/vanillaLatte.png";
 import img3 from "../static/HazelNut.png";
 const PopularNow = () => {
+  const [data, setData] = useState(null);
+  //mimic the calling of the data as if it were an api call.
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/data/products.json");
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="bg-[#F6EBDA] sm:p-12 pt-10">
       <motion.section
@@ -21,24 +41,15 @@ const PopularNow = () => {
           </u>
         </h1>
         <div className="flex flex-col xl:flex-row justify-around w-full  items-center">
-          <Products
-            productName="Vanilla Latte"
-            productDescription="A hazelnut or vanilla latte or a caramel cappuccino are classic coffee drinks that don't taste much like coffee. The milk and flavoring in these espresso drinks can help ease you into the taste of coffee. The espresso flavor still shines through a bit, but it isn't overwhelming in the scheme of the drink."
-            productImg={img1}
-            hasButton={true}
-          />
-          <Products
-            productName="Cappuccino"
-            productDescription="Cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk including a layer of milk foam. Variations of the drink involve the use of cream instead of milk, using non-dairy milk substitutes and flavoring with cocoa powder or cinnamon."
-            productImg={img2}
-            hasButton={true}
-          />
-          <Products
-            productName="Hazelnut Latte"
-            productDescription="How To Make Hazelnut Flavored Latte. Press 1 oz (30 ml) espresso coffee into a mug or heatproof glass. Froth 5 oz (150 ml) hot milk using a milk frother or your espresso machine. Add 1 oz (30 ml) hazelnut syrup to the espresso coffee and stir to combine."
-            productImg={img3}
-            hasButton={true}
-          />
+          {data.slice(0, 3).map((item) => (
+            <Products
+              name={item.name}
+              description={item.description}
+              thumbnail_url={item.thumbnail_url}
+              hasButton={false}
+              aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
+            />
+          ))}
         </div>
       </motion.section>
     </div>

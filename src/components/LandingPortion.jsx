@@ -21,10 +21,10 @@ const LandingPortion = () => {
           the morning
         </h2>
         <div className="flex gap-1 mt-3">
-          <button className="mr-2 text-sm sm:text-base sm:w-32 bg-[#2f2105] text-white px-2 py-1 xl:px-4 sm:py-2   border border-[#2f2105] rounded-3xl hover:bg-transparent hover:text-[#2f2105] hover:scale-110 transition ease-in-out duration-500">
+          <button className="mr-2 text-sm sm:text-base sm:w-32 bg-[#2f2105] text-white px-2 py-1 xl:px-4 sm:py-2 border border-[#2f2105] rounded-3xl hover:bg-transparent hover:text-[#2f2105] hover:scale-105 transition ease-in-out duration-500">
             Order Now
           </button>
-          <button className="w-32 text-[#FF902B] p-2 rounded-3xl hover:bg-[#2f2105] hover:text-white transform hover:border-white ease-in-out duration-1000">
+          <button className="w-32 text-[#FF902B] p-2 rounded-3xl hover:bg-[#2f2105] hover:text-white transform hover:border-white ease-in-out duration-500">
             More
           </button>
         </div>

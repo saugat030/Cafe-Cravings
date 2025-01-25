@@ -8,37 +8,37 @@ const Products = (props) => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 2, type: "spring" }}
       viewport={{ once: true }}
-      className="2xl:w-[25%] xl:w-[32%] w-[75%] flex flex-col items-center bg-white sm:p-5 p-3 rounded-3xl gap-2 shadow-md shadow-slate-300 hover:shadow-slate-600 mb-5"
+      className="2xl:w-[25%] xl:w-[32%] w-[75%] flex flex-col items-center bg-white sm:p-5 p-3 rounded-3xl gap-2 shadow-md shadow-slate-300 hover:shadow-slate-600 mb-5 cursor-pointer"
     >
-      <div className="sm:w-[320px] w-[220px] relative overflow-hidden group">
+      <figure className="xl:w-[320px] xl:h-[250px] w-[220px] aspect-square lg:aspect-auto relative overflow-hidden group">
         <img
-          src={props.productImg}
-          className="w-full rounded-lg"
+          src={props.thumbnail_url}
+          className="w-full h-full object-cover rounded-lg"
           alt="Vanilla Latte"
         />
 
         <div className="absolute p-2 top-full transition-all ease-in-out duration-1000 group-hover:top-0 bg-white opacity-80 h-full w-full rounded-lg">
           <h1 className="font-bold text-amber-900 sm:text-xl opacity-100 text-center">
-            {props.productName}
+            {props.name}
           </h1>
           <p className="text-sm text-balance opacity-100 m-2 rounded-2xl">
-            {props.productDescription}
+            {props.description}
           </p>
         </div>
-      </div>
+      </figure>
       <div className="flex justify-between items-center w-full">
         <h1 className="xl:text-xl text-lg xl:font-bold font-semibold">
-          {props.productName}
+          {props.name}
         </h1>
         <h1 className="xl:text-xl text-lg xl:font-bold font-semibold">21K</h1>
       </div>
       <div className="flex justify-between items-center w-full">
         {props.hasButton && (
-          <h1 className="sm:text-lg text-base text-[#FF902B] font-medium flex sm:gap-3 gap-2">
-            <button className="sm:p-1 border border-[#FF902B] sm:w-24 w-16 rounded-xl">
+          <h1 className="sm:text-lg text-base  text-[#FF902B] font-medium flex sm:gap-3 gap-2">
+            <button className="sm:p-1 border hover:bg-[#FF902B] hover:text-white border-[#FF902B] sm:w-24 w-16 rounded-xl">
               Hot
             </button>
-            <button className="sm:p-1 border border-[#FF902B] sm:w-24 w-16 rounded-xl">
+            <button className="sm:p-1 border border-[#FF902B] hover:bg-[#FF902B] hover:text-white sm:w-24 w-16 rounded-xl">
               Cold
             </button>
           </h1>
