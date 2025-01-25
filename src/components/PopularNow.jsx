@@ -24,36 +24,39 @@ const PopularNow = () => {
     };
     fetchData();
   }, []);
-
-  return (
-    <div className="bg-[#F6EBDA] sm:p-12 pt-10">
-      <motion.section
-        className="flex flex-col gap-6 container justify-between items-center xl:items-start mx-auto p-4 mb-12"
-        initial={{ x: -300 }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 2, type: "spring" }}
-        viewport={{ once: true }}
-      >
-        <h1 className="sm:text-4xl text-2xl font-bold mb-4 xl:ml-16 pl-2">
-          Popular{" "}
-          <u className="underline sm:decoration-4 decoration-2 decoration-amber-700">
-            Now
-          </u>
-        </h1>
-        <div className="flex flex-col xl:flex-row justify-around w-full  items-center">
-          {data.slice(0, 3).map((item) => (
-            <Products
-              name={item.name}
-              description={item.description}
-              thumbnail_url={item.thumbnail_url}
-              hasButton={false}
-              aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
-            />
-          ))}
-        </div>
-      </motion.section>
-    </div>
-  );
+  if (data) {
+    return (
+      <div className="bg-[#F6EBDA] sm:p-12 pt-10">
+        <motion.section
+          className="flex flex-col gap-6 container justify-between items-center xl:items-start mx-auto p-4 mb-12"
+          initial={{ x: -300 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 2, type: "spring" }}
+          viewport={{ once: true }}
+        >
+          <h1 className="sm:text-4xl text-2xl font-bold mb-4 xl:ml-16 pl-2">
+            Popular{" "}
+            <u className="underline sm:decoration-4 decoration-2 decoration-amber-700">
+              Now
+            </u>
+          </h1>
+          <div className="flex flex-col xl:flex-row justify-around w-full  items-center">
+            {data.slice(0, 3).map((item) => (
+              <Products
+                name={item.name}
+                description={item.description}
+                thumbnail_url={item.thumbnail_url}
+                hasButton={true}
+                aboutProduct=""
+              />
+            ))}
+          </div>
+        </motion.section>
+      </div>
+    );
+  } else {
+    return <h1>Loading</h1>;
+  }
 };
 
 export default PopularNow;
