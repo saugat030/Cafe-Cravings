@@ -1,10 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Products from "./Products";
+import ProductCard from "./ProductCard";
 import { motion } from "framer-motion";
-import img1 from "../static/espresso.png";
-import img2 from "../static/vanillaLatte.png";
-import img3 from "../static/HazelNut.png";
 const PopularNow = () => {
   const [data, setData] = useState(null);
   //mimic the calling of the data as if it were an api call.
@@ -42,7 +39,9 @@ const PopularNow = () => {
           </h1>
           <div className="flex flex-col xl:flex-row justify-around w-full  items-center">
             {data.slice(0, 3).map((item) => (
-              <Products
+              <ProductCard
+                key={item.id}
+                id={item.id}
                 name={item.name}
                 description={item.description}
                 thumbnail_url={item.thumbnail_url}

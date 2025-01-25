@@ -1,13 +1,21 @@
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { motion } from "framer-motion";
-const Products = (props) => {
+import { useNavigate } from "react-router-dom";
+const ProductCard = (props) => {
+  const navigate = useNavigate();
+
+  function handleClick(id) {
+    console.log("Logging Id before navigating " + props.id);
+    navigate(`/products/${id}`);
+  }
   return (
     <motion.section
       initial={{ y: -50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 2, type: "spring" }}
       viewport={{ once: true }}
+      onClick={() => handleClick(props.id)}
       className="2xl:w-[25%] xl:w-[32%] w-[75%] flex flex-col items-center bg-white sm:p-5 p-3 rounded-3xl gap-2 shadow-md shadow-slate-300 hover:shadow-slate-600 mb-5 cursor-pointer"
     >
       <figure className="xl:w-[320px] xl:h-[250px] w-[220px] aspect-square lg:aspect-auto relative overflow-hidden group">
@@ -54,4 +62,4 @@ const Products = (props) => {
   );
 };
 
-export default Products;
+export default ProductCard;

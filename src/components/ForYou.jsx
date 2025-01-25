@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Products from "./Products";
+import ProductCard from "./ProductCard";
 // import img from "../static/vanillaLatte.png";
 const ForYou = () => {
   const [data, setData] = useState(null);
@@ -34,7 +34,7 @@ const ForYou = () => {
           </h1>
           <div className="flex flex-wrap w-full gap-5 xl:justify-between justify-center items-center">
             {data.slice(0, 6).map((item) => (
-              <Products
+              <ProductCard
                 name={item.name}
                 description={item.description}
                 thumbnail_url={item.thumbnail_url}

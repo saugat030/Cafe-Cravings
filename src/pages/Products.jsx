@@ -4,6 +4,7 @@ import NavigationMenu from "../components/NavigationMenu";
 import Thumbnail from "../components/Thumbnail";
 import FadeImage from "../components/FadeImage";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { GrCaretPrevious } from "react-icons/gr";
 import { GrCaretNext } from "react-icons/gr";
 const Products = () => {
@@ -12,7 +13,8 @@ const Products = () => {
   const [id, setID] = useState(1);
   const [firstIndex, setFirstIndex] = useState(0);
   const itemsPerPage = 4;
-
+  const { navId } = useParams();
+  console.log(navId);
   useEffect(() => {
     const fetchData = async () => {
       try {
