@@ -13,14 +13,14 @@ const FadeImage = (props) => {
 
   return (
     <figure
-      className={`transition-opacity duration-700 flex-1 flex items-center h-full justify-center ${
+      className={`transition-opacity duration-700 flex-1 flex items-center h-full  justify-center ${
         isLoaded ? "opacity-100" : "opacity-0"
       }`}
     >
       <img
         src={props.src}
         alt="poster_bg"
-        className="h-[800px] rounded-xl"
+        className="2xl:h-[800px] xl:h-[650px] rounded-xl"
         onLoad={handleImageLoad}
       />
     </figure>

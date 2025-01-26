@@ -10,11 +10,10 @@ import { GrCaretNext } from "react-icons/gr";
 const Products = () => {
   const [data, setData] = useState(null);
   const [navigationM, setNavigationM] = useState(false);
-  const [id, setID] = useState(1);
   const [firstIndex, setFirstIndex] = useState(0);
   const itemsPerPage = 4;
-  const { navId } = useParams();
-  console.log(navId);
+  const { navId = 1 } = useParams();
+  console.log("Logging Id after navigation " + navId);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -33,7 +32,7 @@ const Products = () => {
   }, []);
 
   if (data) {
-    const item = data.find((item) => item.id === id);
+    const item = data.find((item) => item.id == navId);
     const handleNext = () => {
       setFirstIndex((prevIndex) => (prevIndex + itemsPerPage) % data.length);
     };
@@ -62,8 +61,10 @@ const Products = () => {
 
           <div className="h-full flex items-center justify-between p-2 px-24">
             <div className="flex flex-col gap-8 flex-1 p-2">
-              <h1 className="text-black text-5xl font-bold">{item.name}</h1>
-              <p className="text-2xl text-slate-600 pe-32">
+              <h1 className="text-black xl:text-4xl 2xl:text-5xl font-bold">
+                {item.name}
+              </h1>
+              <p className="2xl:text-2xl xl:text-xl text-slate-600 pe-32">
                 {item.description}
               </p>
               <div className="flex gap-1">
@@ -82,7 +83,6 @@ const Products = () => {
                 <div className="relative flex flex-wrap gap-4 w-auto">
                   {displayedElements.map((items) => (
                     <Thumbnail
-                      setID={setID}
                       key={items.id}
                       id={items.id}
                       img_src={items.thumbnail_url}

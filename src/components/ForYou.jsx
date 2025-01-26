@@ -36,6 +36,7 @@ const ForYou = () => {
             {data.slice(0, 6).map((item) => (
               <ProductCard
                 name={item.name}
+                id={item.id}
                 description={item.description}
                 thumbnail_url={item.thumbnail_url}
                 hasButton={false}

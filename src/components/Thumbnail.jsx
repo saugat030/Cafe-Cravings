@@ -1,13 +1,14 @@
 import React from "react";
-
+import { useParams, useNavigate } from "react-router-dom";
 const Thumbnail = (props) => {
+  const navigate = useNavigate();
   function handleClick() {
-    props.setID(props.id);
+    navigate(`/products/${props.id}`);
   }
   return (
     <div
       onClick={handleClick}
-      className="h-52 w-40 p-1 rounded-xl bg-primary hover:bg-secondary flex items-center justify-center cursor-pointer"
+      className="2xl:h-52 2xl:w-40 xl:w-28 xl:h-36 p-1 rounded-xl bg-primary hover:bg-secondary flex items-center justify-center cursor-pointer"
     >
       <img
         src={props.img_src}
