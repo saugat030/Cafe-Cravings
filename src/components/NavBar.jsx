@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import img from "../static/bg_img_hero.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import Search from "./Search";
 const NavBar = (props) => {
+  //mimic the calling of the data as if it were an api call.
+
   return (
-    <header className="w-full h-16 md:h-32 relative -z-30 px-2">
-      <div className="hidden sm:flex justify-end absolute z-10 w-full">
+    <header className="w-full h-16 md:h-32 relative px-2">
+      <div className="hidden sm:flex justify-end absolute -z-10 w-full">
         <img src={img} className="w-[30%]" />
       </div>
       <nav className="w-full container mx-auto flex justify-between h-16 md:h-32 items-center gap-3 relative z-50">
@@ -31,11 +34,7 @@ const NavBar = (props) => {
           </li>
         </ul>
         <div className="flex items-center text-[#FF902B]">
-          <input
-            type="text"
-            className="hidden p-2 rounded-2xl w-72 placeholder:text-lg shadow-md shadow-slate-500 text-xl mr-2 placeholder:italic placeholder:opacity-30 sm:inline"
-            placeholder="Espresso"
-          />
+          <Search />
           <button
             className="text-2xl xl:hidden p-2"
             onClick={() => {
