@@ -24,7 +24,7 @@ const ForYou = () => {
 
   if (data) {
     return (
-      <div className="xl:p-20 p-4 pt-16" id="Products">
+      <div className="xl:p-20 p-4 pt-16" id="For_You">
         <div className="container mx-auto flex flex-col gap-3 xl:p-5">
           <h1 className="xl:text-4xl text-3xl font-bold text-black xl:mb-10 mb-5">
             Special Menu{" "}

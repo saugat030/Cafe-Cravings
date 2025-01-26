@@ -1,7 +1,9 @@
 import React from "react";
 import img from "../static/img_hero.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 const LandingPortion = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col-reverse sm:flex-row container gap-12 xl:gap-1 mx-auto justify-between items-center sm:p-7 p-3 sm:mt-4">
       <motion.div
@@ -21,10 +23,20 @@ const LandingPortion = () => {
           the morning
         </h2>
         <div className="flex gap-1 mt-3">
-          <button className="mr-2 text-sm sm:text-base sm:w-32 bg-[#2f2105] text-white px-2 py-1 xl:px-4 sm:py-2 border border-[#2f2105] rounded-3xl hover:bg-transparent hover:text-[#2f2105] hover:scale-105 transition ease-in-out duration-500">
-            Order Now
+          <button
+            onClick={() => {
+              navigate("#For_You");
+            }}
+            className="mr-2 text-sm sm:text-base sm:w-32 bg-[#2f2105] text-white px-2 py-1 xl:px-4 sm:py-2 border border-[#2f2105] rounded-3xl hover:bg-transparent hover:text-[#2f2105] hover:scale-105 transition ease-in-out duration-500"
+          >
+            <a href="#For_You">Order Now</a>
           </button>
-          <button className="w-32 text-[#FF902B] p-2 rounded-3xl hover:bg-[#2f2105] hover:text-white transform hover:border-white ease-in-out duration-500">
+          <button
+            onClick={() => {
+              navigate("/products");
+            }}
+            className="w-32 text-[#FF902B] p-2 rounded-3xl hover:bg-[#2f2105] hover:text-white transform hover:border-white ease-in-out duration-500"
+          >
             More
           </button>
         </div>

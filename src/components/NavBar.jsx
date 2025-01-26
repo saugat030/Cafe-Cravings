@@ -21,13 +21,13 @@ const NavBar = (props) => {
         </div>
         <ul className="flex-1 hidden sm:flex gap-3 p-2 text-xl justify-center">
           <li className="ml-4 hover:text-[#FF902B]">
-            <a href="#About">About Us</a>
+            <a href="/#About">About Us</a>
           </li>
           <li className="ml-4 hover:text-[#FF902B]">
             <Link to="/products">Our Products</Link>
           </li>
           <li className="ml-4 hover:text-[#FF902B]">
-            <a href="#Delivery">Delivery</a>
+            <a href="/#Delivery">Delivery</a>
           </li>
         </ul>
         <div className="flex items-center text-[#FF902B]">

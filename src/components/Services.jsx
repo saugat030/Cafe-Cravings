@@ -5,7 +5,7 @@ import img2 from "../static/food-truck.png";
 const Services = () => {
   return (
     <div
-      className="flex flex-col justify-between p-12 xl:gap-14 bg-white sm:p-14"
+      className="flex flex-col justify-between p-12 xl:gap-14 sm:p-14"
       id="Delivery"
     >
       <motion.div
