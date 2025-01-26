@@ -39,6 +39,7 @@ const ForYou = () => {
                 id={item.id}
                 description={item.description}
                 thumbnail_url={item.thumbnail_url}
+                long_description={item.long_description}
                 hasButton={false}
                 aboutProduct="A hazelnut or vanilla latte or a caramel cappuccino."
               />

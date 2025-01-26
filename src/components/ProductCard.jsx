@@ -29,8 +29,8 @@ const ProductCard = (props) => {
           <h1 className="font-bold text-amber-900 sm:text-xl opacity-100 text-center">
             {props.name}
           </h1>
-          <p className="text-sm text-balance opacity-100 m-2 rounded-2xl">
-            {props.description}
+          <p className="text-sm text-justify opacity-100 m-2 rounded-2xl">
+            {props.long_description}
           </p>
         </div>
       </figure>
