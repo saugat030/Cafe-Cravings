@@ -43,10 +43,24 @@ const ProductCard = (props) => {
       <div className="flex justify-between items-center w-full">
         {props.hasButton && (
           <h1 className="sm:text-lg text-base  text-[#FF902B] font-medium flex sm:gap-3 gap-2">
-            <button className="sm:p-1 border hover:bg-[#FF902B] hover:text-white border-[#FF902B] sm:w-24 w-16 rounded-xl">
+            <button
+              disabled={!props.hot}
+              className={`sm:p-1 border ${
+                !props.hot
+                  ? "border-gray-400 text-gray-400"
+                  : "border-[#FF902B] hover:bg-[#FF902B] hover:text-white"
+              } sm:w-24 w-16 rounded-xl`}
+            >
               Hot
             </button>
-            <button className="sm:p-1 border border-[#FF902B] hover:bg-[#FF902B] hover:text-white sm:w-24 w-16 rounded-xl">
+            <button
+              disabled={!props.cold}
+              className={`sm:p-1 border ${
+                !props.cold
+                  ? "border-gray-400 text-gray-400"
+                  : "border-[#FF902B] hover:bg-[#FF902B] hover:text-white"
+              } sm:w-24 w-16 rounded-xl`}
+            >
               Cold
             </button>
           </h1>

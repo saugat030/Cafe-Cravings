@@ -43,6 +43,8 @@ const PopularNow = () => {
                 key={item.id}
                 id={item.id}
                 name={item.name}
+                hot={item.hot}
+                cold={item.cold}
                 description={item.description}
                 thumbnail_url={item.thumbnail_url}
                 hasButton={true}
