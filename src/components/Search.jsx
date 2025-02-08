@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-
+import { useNavigate } from "react-router-dom";
 const Search = () => {
   const [search, setSearch] = useState("");
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -42,13 +43,14 @@ const Search = () => {
               <h1
                 key={item.id}
                 className="hover:bg-primary p-2 flex justify-around h-20 items-center my-1"
+                onClick={() => navigate(`/products/${item.id}`)}
               >
                 <img
                   src={item.thumbnail_url}
                   alt="ThumbnailUrl"
                   className="h-full"
                 />
-                {item.name}
+                <span>{item.name}</span>
               </h1>
             ))}
       </div>
